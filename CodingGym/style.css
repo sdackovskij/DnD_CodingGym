@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 500px;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+    background-color: crimson;
+}
+
+header {
+    grid-area: h;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: m;
+    background-color: aliceblue;
+}
+
+aside {
+    grid-area: a;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    grid-area: f;
+    background-color: teal;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    padding: 16px;
+    padding-bottom: 24px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+article {
+    background-color: salmon;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 20px;
+
+    animation-name: card;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes card {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+article:hover {
+    animation: none;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+.article__header, .article__body, .article__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.article__header {
+    padding: 16px 0;
+    background-color: pink;
+    border-radius: 20px 20px 0 0;
+    color: aliceblue;
+}
+
+.article__body {
+    padding: 64px 0;
+    border-bottom: 2px solid black;
+}
+
+.article__footer {
+    padding: 8px 0;
+}
+
+.article__footer button {
+    outline: none;
+    padding: 8px 36px;
+    border-radius: 20px;
+    border: 0;
+    background: green;
+}
+
+.article__footer button:hover {
+    background: blue;
+}
+
+.article__footer button:active {
+    position: relative;
+    top: 4px; 
+}
