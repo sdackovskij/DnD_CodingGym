@@ -53,14 +53,14 @@ footer {
 }
 
 article {
-    background-color: salmon;
-    width: 300px;
+    background-color: lavenderblush;
+    width: 200px;
     margin: 0 auto;
     margin-bottom: 24px;
     border-radius: 20px;
 
     animation-name: card;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -102,14 +102,14 @@ article:last-child {
 
 .article__header {
     padding: 16px 0;
-    background-color: pink;
+    background-color: hotpink;
     border-radius: 20px 20px 0 0;
-    color: aliceblue;
+    color: azure;
 }
 
 .article__body {
-    padding: 64px 0;
-    border-bottom: 2px solid black;
+    padding: 40px 0;
+    border-bottom: 1px solid grey;
 }
 
 .article__footer {
@@ -121,11 +121,12 @@ article:last-child {
     padding: 8px 36px;
     border-radius: 20px;
     border: 0;
-    background: green;
+    background: coral;
+    color:#ffffff;
 }
 
 .article__footer button:hover {
-    background: blue;
+    background: hotpink;
 }
 
 .article__footer button:active {
