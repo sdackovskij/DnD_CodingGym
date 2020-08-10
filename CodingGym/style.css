@@ -133,3 +133,46 @@ article:last-child {
     position: relative;
     top: 4px; 
 }
+
+main {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+.puzzle {
+    display: grid;
+    grid-template: repeat(3, 10rem)/ repeat(3, 10rem);
+    grid-gap: 1px;
+
+}
+
+.puzzle-item {
+    background: #ddd;
+    display: flex;
+    justify-content: stretch;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.parts {
+    padding-top: 20px;
+}
+
+.parts-item {
+    display: inline-block;
+    min-width: 115px;
+    min-height: 115px;
+    filter: blur(8px);
+}
+
+.parts-item:hover {
+    filter: blur(0);
+}
+
+.bigPic {
+    width: 10rem;
+    height: 10rem;
+    filter: blur(0);
+}
